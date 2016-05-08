@@ -54,3 +54,17 @@ def primeSieve(numRange):
                 fullRange[multipleOfIndex] = False
 
     return primes
+
+
+def isPalindrome(n):
+    '''checks to see if input is a palindrome (reads same forwards and backwards)'''
+    i = str(n)
+    if len(i) == 0:
+        return False
+    else:
+        return (i == i[::-1])
+
+if __name__ == "__main__":
+    import sys
+    x = sys.argv[1]
+    print(isPalindrome(x))
