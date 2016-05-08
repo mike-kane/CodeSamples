@@ -8,6 +8,9 @@
 # What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 #
 #############################################################################################################
+import time
+
+start = time.time()
 
 def getAnswer():
     '''
@@ -33,6 +36,6 @@ def getAnswer():
     return x
 
 if __name__ == "__main__":
-    print(getAnswer())
+    print("answer is {}, found in {} seconds.".format(getAnswer(), time.time() - start))
 
-#answer == 232792560
+# answer is 232792560, found in 0.01872992515563965 seconds.
