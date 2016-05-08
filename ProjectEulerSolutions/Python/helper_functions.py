@@ -64,7 +64,7 @@ def isPalindrome(n):
     else:
         return (i == i[::-1])
 
-if __name__ == "__main__":
-    import sys
-    x = sys.argv[1]
-    print(isPalindrome(x))
+#if __name__ == "__main__":
+#     import sys
+#     x = sys.argv[1]
+#     print(isPalindrome(x))
